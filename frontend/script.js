@@ -1,5 +1,6 @@
 // const config = require('./config.js');
-import {backendUrl} from './config.js'; 
+import { backendUrl } from "./config.js";
+// const backendUrl = 'http://localhost:3000'
 const todoApp = (() => {
     const container = document.getElementById("container");
     let todos = [];
@@ -125,3 +126,5 @@ const todoApp = (() => {
         filterTodos,
     };
 })();
+
+window.todoApp = todoApp;
