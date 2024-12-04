@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>To-Do Application</h1>
+    <div id="form-container">
+        <input id="title" type="text" placeholder="Title">
+        <input id="description" type="text" placeholder="Description">
+        <select id="priority">
+            <option value="Low">Low Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+        </select>
+        <select id="category">
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Other">Other</option>
+        </select>
+        <button onclick="todoApp.addTodo()">Add Todo</button>
+    </div>
+
+    <div class="filters">
+        <input id="search" type="text" placeholder="Search by title..." oninput="todoApp.filterTodos()">
+    </div>
+
+    <div id="container"></div>
+
+    <footer>
+        &copy; 2024 Ramesh Das
+    </footer>
+</body>
+
+<script type="module" src="script.js"></script>
+</html>
